@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* для прижатия подвала */
+.main { 
+    max-width: 1366px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* для прижатия подвала */
+.main__part {
+    flex-grow: 1;
+}
+
+/* для выравнивания */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    min-height: 379px;
+    background-image: url(../images/contacts/top__back_contacts.png) ;
+    background-repeat: no-repeat;
+    background-position: center 129px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 37px;
+    padding-bottom: 54px;
+}
+
+.top__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top__heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin: 51px auto 16px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+
+.top__text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 57px;
+    max-width: 940px;
+}
+
+.contact__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 299px;
+    margin-right: 101px;
+}
+
+.content__heading {
+    font-weight: 500;
+    color: #1F3F68;
+}
+
+.address__box {
+    margin-top: 56px;
+}
+
+.address_text {
+    margin-top: 24px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.phone__box, .service__box {
+    margin-top: 40px;
+}
+
+.menu__phone, .menu__service {
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+.menu__phone__li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.menu__phone__li:first-child::before {
+    content: url(../images/contacts/img_phone.svg);
+    display: inline-block;
+    margin-right: 19px;
+    
+}
+
+.menu__phone__li:last-child::before {
+    content: url(../images/contacts/img_phone.svg);
+    display: inline-block;
+    margin-right: 19px;
+    margin-top: 16px;
+}
+
+.menu__service__li {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.7;
+}
+
+.menu__service__li:first-child::before {
+    content: url(../images/contacts/img_site.svg);
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.menu__service__li:last-child::before {
+    content: url(../images/contacts/img_post.svg);
+    display: inline-block;
+    margin-right: 18px;
+    margin-top: 16px;
+}
+
+.send__message {
+    max-width: 540px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    color: #1F3F68;
+    flex-grow: 1;
+}
+
+form {
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form__heading {
+    font-weight: 500;
+    color: #1F3F68;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.form__text {
+    font-size: 16px;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.form__button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 23px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+}
+
+#Full_Name, #Email {
+    width: 100%;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding: 21px 0 21px 36px;
+    box-sizing: border-box;
+}
+
+#message {
+    width: 100%;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    margin-bottom: 72px;
+    padding: 21px 0 0 36px;
+    box-sizing: border-box;
+}
+
+
+input[type="text"]::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;;
+    opacity: 0.2;
+}
+
+input[type="email"]::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+textarea::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+    font-family: sans-serif;
+}
+
+.map_show {
+    max-width: 940px;
+    height: 480px;
+    margin: 96px auto 0;
+}
+
+.footer {
+    margin-top: 112px;
+    padding-top: 91px;
+    padding-bottom: 64px;
+    background: #316099;
+}
+
+.footer__top {
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__headling {
+    width: 340px;
+    text-align: left;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+}
+
+.footer__text {
+    width: 495px;
+}
+
+.text__footer {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.footer__buttom {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    padding: 15px 80px;
+    text-decoration: none;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.footer__list {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    list-style-type: none;
+    display: flex;
+    margin-right: 32px;
+}
+
+.footer__list:first-child::before {
+    content: 'A. ';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer__list:nth-child(2)::before {
+    content: 'T. ';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer__list:last-child::before {
+    content: 'E. ';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer__copy__text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 64px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 46px;
+    }
+
+    .top {
+        min-height: 339px;
+        background-position: center 99px;
+    }
+
+    .top__heading {
+        margin: 50px auto 16px;
+    }
+
+    .content {
+        padding-top: 64px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__box {
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
+
+    .send__message {
+        max-width: 520px;
+    }
+
+    form {
+        padding: 54px;
+    }
+
+    #Full_Name, #Email {
+        margin-bottom: 31px;
+        padding: 20px 0 20px 34px;
+    }
+
+    #message {
+        margin-bottom: 70px;
+        padding: 20px 0 0 34px;
+    }
+
+    .form__button {
+        padding: 22px;
+    }
+
+    .map_show {
+        margin-top: 64px;
+        height: 392px;
+    }
+
+    .footer {
+        margin-top: 109px;
+        padding-top: 47px
+    }
+
+    .footer__container {
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+
+    .text__footer {
+        margin-bottom: 40px;
+    }
+
+    .footer__buttom {
+        padding: 4px 31px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__list {
+        margin-bottom: 24px;
+    }
+    
+    .footer__copy__text {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 667px) {
+    .header {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    
+    .top {
+        min-height: 333px;
+        background-position: center 83px;
+    }
+
+    .top__heading {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        margin: 48px auto 32px; 
+    }
+
+    .top__text {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .content {
+        padding-top: 46px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__box {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .send__message {
+        max-width: 342px;
+    }
+
+    form {
+        padding: 35px;
+    }
+
+    .form__heading {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .form__text {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+     #Full_Name, #Email {
+        margin-bottom: 20px;
+        padding: 13px 0 13px 22px;
+    }
+
+    #message {
+        margin-bottom: 45px;
+        padding: 12px 0 0 20px;
+    }
+
+    textarea::placeholder {
+        font-size: 14px;
+    }
+
+    input[type="text"]::placeholder {
+        font-size: 14px;
+    }
+
+    input[type="email"]::placeholder {
+        font-size: 14px;
+    }
+
+    .form__button {
+        padding: 13px;
+    }
+
+    .map_show {
+        margin-top: 32px;
+        height: 349px;
+    }
+
+    .footer {
+        margin-top: 64px;
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+
+    .footer__container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer__top {
+        padding-bottom: 40px;
+        flex-direction: column;
+        padding-bottom: 41px;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+
+    .footer__headling {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        width: 75%;
+        margin: 0 auto 32px;
+    }
+
+    .text__footer {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__info {
+        margin-top: 32px;
+    }
+
+    .footer__list {
+        margin-bottom: 17px;
+    }
+
+    .footer__copy__text {
+        margin-top: 20px;
+        text-align: center;
+    } 
+}

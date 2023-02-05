@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{{ static }}css/styles_contacts.css">
+</head>
+<body>
+    <div class="main">
+        <!-- для прижатия подвала -->
+        <div class="main__part">
+            <!-- для прижатия подвала -->
+            <div class="top">
+                <div class="container top__box">
+                    <ul class="header">
+                        <li><a href="/"><img src="{{ static }}images/index/logo.svg" alt="logo"></a></li>
+                        <li><a href="/contacts/"><img src="{{ static }}images/index/contacts.svg" alt="contacts"></a></li>
+                    </ul>
+                    <div class="top__info">
+                        <h1 class="top__heading">Contact Us</h1>
+                        <p class="top__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content container">
+                <div class="contact__box">
+                    <img src="{{ static }}images/contacts/back_content.png" alt="foto">
+                    <div class="address__box">
+                        <h3 class="content__heading text">ADDRESS</h3>
+                        <p class="address_text text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+                    </div>
+                    <div class="phone__box">
+                        <h3 class="content__heading text">PHONE</h3>
+                        <ul class="menu__phone">
+                            <li class="menu__phone__li">+7-812-7313-4321</li>
+                            <li class="menu__phone__li">+7-817-0000-1234</li>
+                        </ul>
+                    </div>
+                    <div class="service__box">
+                        <h3 class="content__heading text">ONLINE SERVICE</h3>
+                        <ul class="menu__service">
+                            <li class="menu__service__li">www.site.com</li>
+                            <li class="menu__service__li">hello.site@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="send__message">
+                    <form action="#">
+                        <h3 class="form__heading text">SEND US MESSAGE</h3>
+                        <label for="Full_Name" class="form__text text">
+                            Full Name<br>
+                            <input type="text" id="Full_Name" placeholder="Your Name">
+                        </label>
+                        <label for="Email" class="form__text text">
+                            Email<br>
+                            <input type="email" id="Email" placeholder="Your Email">
+                        </label>
+                        <label for="message" class="form__text text">
+                            Message<br>
+                            <textarea id="message" rows="10" cols="30" placeholder="Your Message"></textarea>
+                        </label>
+                        <a href="#" class="form__button text">SUBMIT</a>
+                    </form>
+                </div>
+            </div>
+            <div id="ymaps1628542289921376526" class="map_show">
+                <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad0efa2f4e381142d0ddeaf2ebc167a4c6f8e52d0f59205c7646fedee2a7a6dd0&amp;width=100%25&amp;height=&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer__container">
+                <div class="footer__top">
+                    <div class="footer__text">
+                        <h3 class="footer__headling">Intersted to woek with our team?</h3>
+                        <p class="text__footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <a href="#" class="footer__buttom">Let’s Talk</a>
+                </div>
+            </div>
+            <hr>
+            <div class="container footer__container">
+                <div class="footer__bottom">
+                    <ul class="footer__info">
+                        <li class="footer__list">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="footer__list">+7-812-7313-4321</li>
+                        <li class="footer__list">hello.site@gmail.com</li>
+                    </ul>
+                    <p class="text footer__copy__text">2021 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
